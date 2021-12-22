@@ -18,6 +18,7 @@ var tt = "Chercher..."
 var text = ''
 var tl  = tt.length
 
+
  
 
 createReseau()
@@ -29,13 +30,20 @@ clickSerch()
 hoverReseau()
 cssReseau()
 
+
+clickAjouter()
+animpublicite()
+
+clickSenregistrer()
+clickDevenirAnnonceur()
+clickannulerEnr()
 //cssAnimeThies()
 
 //animeInterThies()
 
 
 
-cssbody()
+
 var anx = (X*3.5)/100
 var anxx = (X*4)/100
 var XX = X - $('#thiesanimation').width()
@@ -46,10 +54,46 @@ var XX = X - $('#thiesanimation').width()
 function clickContacter(){
 
   $('#contacter').click(function(){
-        alert('cliqued wayy')
+
+    animeOpacite()
+    
+     //   alert('cliqued wayy')
   });
    
   }
+
+
+  function clickDevenirAnnonceur(){
+
+    $('#saveNewClient').click(function(){
+  
+     alert('devenir annocceur') 
+     $("#divenregistrer").css({
+      
+      'display': 'none',
+     
+     
+     });
+     annulerFlouter()
+     
+      });
+     
+    }
+
+    function clickannulerEnr(){
+
+      $('#annuler').click(function(){
+    
+       $("#divenregistrer").css({
+        
+        'display': 'none',
+       
+       
+       });
+       annulerFlouter()
+        });
+       
+      }
 
 function clickReseau(){
 
@@ -188,13 +232,22 @@ function clickReseau(){
                   'top':'38%',
                   'right':'0%',
                 'padding':'1%',
-               'background':'rgba(0,0,0,0.3)',
+        //       'background':'rgba(236,255,66,0.3)',
+        'border': '1px solid #bafff0',
+        
               
+              
+                });
+                $("#imgw").css({
+               
+                 'border': '1px solid #bafff0',
+                 'border-radius': '50%',
+        
               
               
                 });
             
-                $("#imgf , #imgt , #imgi , #imgw , #reseau").width((X*3.5)/100)
+                $("#imgf , #imgt , #imgi , #imgw , #reseau").width((X*3)/100)
                
               }
       
@@ -224,36 +277,145 @@ function clickReseau(){
       
  
 
-function cssbody(){
-  $('body').css({
+
+
+
+// script espace membre
+
+function showlogin() {
   
-    //  'background-image': 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("public/image/acceuil/fontl.jpg")',
-     //           'background-repeat':'no-repeat',
-            
-    //            'background-position': 'center',
-   //             'background-size': 'cover',
-   'border': '1px solid blue',
-   'position': 'absolute',
+  $(".divenregistann , .logindiv , #maske").css({
+      'display': 'block',
       
-    });
-    
-    $('body').width( X)
-    $('body').height(Y)
-    
-  //  $('html').css({
-  //    'border': '1px solid red',
- //   });
-  
-  //  $('html').width( X)
-  //  $('html').height(Y)
-    
-    
      
-    
-    
+      }) ; 
+
+  
+
+      $('.ajouterpdiv')
+.css('margin-top', '75%')
+
+.animate({
+marginTop : '13%' 
+
+},{
+duration : 1500
+, queue : true  // ici peu importe sa valeur
+, complete : function(){
+  baisserMask()
 }
+});
+ }
+
+ function baisserMask() {
+  
+   
+ $('#maske')
+.css('top', '52%')
+
+.animate({
+top : '100%' 
+
+},{
+duration : 1500
+, queue : true  // ici peu importe sa valeur
+, complete : function(){
+  $("#maske").css({
+    'display': 'none',
+    
+   
+    }) 
+}
+});
+ }
+
+ function animeOpacite() {
+  
+  $('#contacter')
+ .css('opacity', '1')
+ 
+ .animate({
+  opacity : '0' ,
+ 
+ 
+ },{
+ duration : 2500
+ , queue : true  // ici peu importe sa valeur
+ , complete : function(){
+  
+  cssEmailEtel()
+  animeUs()
+
+ }
+ });
+  }
+
+ function animeUs() {
+  
+  $('#contacter')
+ .css('margin-top', '-5%')
+ 
+ .animate({
+ marginTop : '0%' ,
+ 
+ 
+ },{
+ duration : 2500
+ , queue : true  // ici peu importe sa valeur
+ , complete : function(){
+  
+ }
+ });
+  }
 
 
 
-
+  function clickSenregistrer(){
+    $('#registrc').click(function(){
+      showEnregistrement()
+      flouter()
+    
+    });
+  }
+  function showEnregistrement(){
+    $("#divenregistrer").css({
       
+      'display': 'block',
+      
+      
+       });
+  }
+ function clickAjouter(){
+
+  $('.ajouterpdiv').click(function(){
+    showlogin() 
+  });
+   
+  }
+
+  function animpublicite(){
+    var o = 0 
+    var intid =   setInterval( function() {
+  
+      if( o%2 == 0 ){
+        $("#publicite").css({
+          'border': '3px solid #00ffff',
+          
+         
+          }) ; 
+         
+      }else{
+        $("#publicite").css({
+          'border': '3px solid yellow',
+          
+         
+          }) ; 
+          
+      }
+         
+    
+             o = o + 1
+  
+            }, 1000) ; 
+  
+  }
