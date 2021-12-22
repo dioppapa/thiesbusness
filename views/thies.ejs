@@ -5,12 +5,18 @@
     <title>acceuil</title>
     
     <!---we had linked our css file----->
-
+    <script src="/public/script/jquery-3.1.1.min.js"  type="text/javascript">    </script>
+    <script src="/public/script/is.js"  type="text/javascript">    </script>
+   
   
 </head>
+
+
+
+
 <body>
-	<script src="/public/script/jquery-3.1.1.min.js"  type="text/javascript">    </script>
-  
+  <div id="global">
+
   <!-- 
   <div id="thiesanimation" > 
        
@@ -20,6 +26,8 @@
   
  </div>
     -->
+
+   
  <div id="menu">
   
   <!--  <div id="transition"></div>   -->
@@ -46,7 +54,7 @@
  <div id="publication">
 
   <div class="page"> 
-    <%-include('page/publication.ejs')%>
+     <%-include('page/publication.ejs')%> 
 
   </div>
 
@@ -57,31 +65,181 @@
   </div>
 
 
-  <div class="page"> <p> projet </p></div>
+  <div class="page"> 
+    <p>projet</p>
+   
+  </div>
   <div class="page"> <p>evenements et programmes </p></div>
-  <div class="page"> <p> a propos de thies busness et annonces </p></div>
+  <div class="page">
+    <%-include('page/qui.ejs')%>
+
+    </div>
 
  </div>
  <div id="publicite">
-    <label class="label"> publicite ou nouvelle</label>
- </div>
- <div id="membre">
-  <label class="label"> espace annonceur</label>
- </div>
- <div id="baspage">
-  <label class="label"> logo partenaire et autres</label>
+   <!--  <label class="label"> publicite ou nouvelle</label> -->
 
+   <div id="divnewy">
+    <img id="newy"  src ="public/image/acceuil/new.gif"/>
+   
+   </div>
+   <div id="divsapin">
+    <img id="sapin"  src ="public/image/acceuil/sapin.gif"/>
+   
+   </div>
+   
+   <div id="divjnoel">
+    <img id="jnoel"  src ="public/image/acceuil/jn.gif"/>
+   
+   </div>
+   
+ </div>
+
+ <div id="membre">
+  
+  
+  <!--  <label class="label"> espace annonceur</label> -->
+  <div  class="ajouterpdiv">
+    <img class="ajouterpi"  src ="public/image/acceuil/plus.png"/>
+    <label class="ajouterpl">Publication</label>
+    
+  </div>
+
+
+  <div class="logindiv" style="display: none;">
+    <label class="noml">nom</label></br>
+<input type="text" class="innoml"></input> </br>
+<label class="passl">passe</label> </br>
+<input type="text" class="innpassl"></input>
+<input  class="validera" type="button" value="valider"></input>
+</div>
+
+<div class="divenregistann" style="display: none;">
+    <label  id="registrc">s'enregistrer</label>
+   <label  id="annullec">annuler</label>
+
+</div>
+<div id="maske" style="display: none;">
+
+</div>
+  </div>
+
+</div>
+ 
+<div id="baspage">
+  <div class="logolabelbas">
+
+   <img class="logobas"  src ="public/image/logo/tfm.jpg"/>
+
+   <label class="labelbas"> le miroire du senegal</label>
+
+  </div>
+   <div class="logolabelbas">
+
+    <img class="logobas"  src ="public/image/logo/duna.jpg"/>
+
+    <label class="labelbas"> radio duna</label>
+
+   </div>
+   <div class="logolabelbas">
+
+    <img class="logobas"  src ="public/image/logo/bis.jpg"/>
+
+    <label class="labelbas"> Banque Islamique du senegal</label>
+
+   </div>
+   <div class="logolabelbas">
+
+    <img class="logobas"  src ="public/image/logo/isep.jpg"/>
+
+    <label class="labelbas"> isep de thies</label>
+
+   </div>
+   <div class="logolabelbas">
+
+    <img class="logobas"  src ="public/image/logo/sentv.jpg"/>
+
+    <label class="labelbas">futur media</label>
+
+   </div>
  </div>
  <div id="contacter"> 
-      <a>  contacter nous </a>
- </div>
+    <a>  contacter nous </a>
+    
+    <label  style="display: none;"  id="contactlemail"> email : <span class="spancontact">  thiesbusness@gmail.com </span> </label>
+   
+    <label style="display: none;"  id="contactltel"> nom : <span class="spancontact"> 221774422647</span></label>
+   
+  </div>
+
+
  
  <img id="logo"  src ="public/image/acceuil/logo.jpg"/>
 
-
+ 
+ 
+</div>
+<div id="divenregistrer" style="display: none;"  > 
+  
+  <table>
+ 
+ 
+         
+  <input  class="save" type="text"  placeholder="Nom" required >
+ 
+ <span  class="span" type="text"> </span>
+ 
+  
+ <input  class="save" type="text"  placeholder="Prenom" >
+ 
+<span  class="span" type="text"> </span>
+ 
+<input  class="save" type="text"  placeholder="Pseudo" required >
+<span  class="span" type="text"> </span>
+ 
+ 
+ <input  class="save" type="text"  placeholder="Tel" required >
+ <span  class="span" type="text"> </span>
+ 
+ <input  class="save" type="text"  placeholder="Adresse" required >
+ <span  class="span" type="text"> </span>
+ 
+ 
+<input  class="save" type="text"  placeholder="Email" required >
+ <span  class="span" type="text"> </span>
+ 
+<input  class="save" type="text"  placeholder="Passe" required >
+<span  class="span" type="text"> </span>
+ 
+<input  class="save" type="text"  placeholder="Passe" required >
+<span  class="span" type="text"> </span>
+ 
+ 
+ </table> 
+ <input id="saveNewClient" type="button" value="devenir annonceur"> 
+ <input id="annuler" type="button" value="annuler">   
+</div>
 </body>
 <style>
-  
+  ::-moz-placeholder{
+      color:black ;
+      opacity: 0.7;
+      
+    }
+    ::-webkit-input-placeholder{
+      color:black ;
+      opacity: 0.7;
+    }
+    :-ms-input-placeholder{
+      color:black ;
+      opacity: 0.7;
+    }
+    :-moz-placeholder{
+      color:black ;
+      opacity: 0.7;
+      
+    }
+
 </style>
 <script>
  
@@ -97,7 +255,11 @@
 <script src="/public/script/css/csspublication.js"  type="text/javascript">    </script>
 
 <script src="/public/script/css/cssvente.js"  type="text/javascript">    </script>
+<script src="/public/script/css/cssqui.js"  type="text/javascript">    </script>
 
 <script src="/public/script/css/cssgeneral.js"  type="text/javascript">    </script>
 
+<script>
+  
+</script>
 </html>
