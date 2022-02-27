@@ -1,0 +1,153 @@
+<div id="comptea" style="display: block;">
+
+
+  <%-include('../page/parti/login.ejs')%>
+ 
+
+</div>
+<div id="compteb" style="display: none;" >
+  
+    <div id="divfaireunepublication">
+      <%-include('../page/parti/publicapati.ejs')%>
+ 
+
+    </div>
+    <div id="divfaireuneannonce" style="display: none;">
+      <%-include('../page/parti/annoncep.ejs')%>
+    </div>
+    <div id="divmonboutique" style="display: none;">
+      <%-include('../page/parti/monboutique.ejs')%>
+    </div>
+    <div id="divmonprofileparam" style="display: none;">
+      <%-include('../page/parti/monprofile.ejs')%>
+    </div>
+    
+    <div id="divboutiqueaffichag" style="display: none;">
+
+      <%-include('../page/parti/apercu.ejs')%>
+    </div>
+
+    <div id="divprofilemenu" style="display: block;">
+      <%-include('../page/parti/profilemenu.ejs')%>
+    </div>
+
+
+   
+
+</div>
+
+
+ 
+  
+  <style>
+   .cardMybout , .columnMybout{
+  padding: auto;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.divlabMycomptc{
+  margin-top: 6%;
+ 
+font-weight: bold;
+ width: 100%;
+}
+.divlabMycompta{
+  margin-top: 4%;
+ font-size: 10px;
+
+ float: left;
+}
+.divlabMycompb{
+  
+ font-size: 12px;
+font-style: italic;
+ float: right;
+ color:  rgba(233,0,0,0.5) ;
+}
+
+#divboutiqueprduitMy {
+ 
+  display: grid;
+   place-items: center;
+
+
+  
+}
+.rowMybout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rowMybout {
+   float: right;
+   width: 80%;
+   padding-left: 12% ;
+ 
+ 
+}
+
+ 
+
+.columnMybout  {
+  width: 100%;
+  height: 100%;
+  padding: 0 1em 1em 0;
+  text-align: center;
+}
+.cardMybout{
+  width: 100%;
+  height: 100%;
+  padding: 1em 0;
+  background: linear-gradient(#ffffff 50%, rgba(233,0,0,0.1) 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 1px 1px 3px #555 ;
+}
+
+
+.iconeMybout {
+  
+  position: relative;
+  margin: auto;
+
+  height: 6em;
+  width: 6em;
+  
+ 
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+
+.cardMybout:hover {
+  background-position: 0 100%;
+  color: black;
+}
+
+
+@media screen and (min-width: 768px) {
+  #divboutiqueprduitMy {
+    padding: 0 2em;
+  }
+  .columnMybout {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #divboutiqueprduitMy {
+    padding: 1%
+  }
+  .columnMybout {
+    flex: 0 10% 30%;
+    max-width: 30%;
+  }
+}
+
+
+   </style>

@@ -1,0 +1,104 @@
+
+<div id="divannoncereg">
+
+    <div id="divmonmessage">
+
+        <label id="monmessage"> mon message</label>
+        <textarea id="textarea">
+    
+        </textarea>
+           
+    
+    </div>
+    
+    <div id="divchoiimage">
+    <input id="ajouterimagesi" type="checkbox" value="a"/> <label for="a" id="labelora"> ajouter images</label>
+     
+        <div id="divajouterimg" style="display: none;">
+
+       
+        <div class="divunitepubimagea" >
+            <img class="unitepubimagea" src ="public/image/logo/1.png" alt="1"/> 
+        <input class="unitepubimagebout" value="modifier"></input>
+        <form  class = "myForma" action ="/uploada" method="POST" enctype="multipart/form-data"> 
+         
+            <input class="fileupdatea" type="file" name="filesa"  style="display: none;">  
+            </input> 
+            
+            <input type="submit"  class="submita"  value="valider"  style="display:none;">
+          </input> 
+      
+      </form>
+        </div>
+        <div class="divunitepubimagea">
+            <img class="unitepubimagea" src ="public/image/logo/2.png" alt="1"/> 
+           <input class="unitepubimagebout" value="modifier"></input>
+           <form  class = "myForma" action ="/uploada" method="POST" enctype="multipart/form-data"> 
+         
+            <input class="fileupdatea" type="file" name="filesa"  style="display: none;">  
+            </input> 
+            
+            <input type="submit"  class="submita"  value="valider"  style="display:none;">
+          </input> 
+      
+      </form>
+        </div>
+    </div>
+    </div>
+    <form  id = "myForma" action ="/uploada" method="POST" enctype="multipart/form-data"> 
+         
+        <input id="fileupdatea" type="file" name="filesa"  style="display: none;">  
+        </input> 
+        
+        <input type="submit"  id="submita"  value="submit"  style="display:none;">
+      </input> 
+  
+  </form>
+  
+    <div id="divannoncetitle">
+
+        <label id="lannoncetitle"> un titre </label>
+        <input id="inputextannonce"></input>
+    
+    </div>
+
+    <div id="divselectheme">
+        <label for="selectheme" id="labelselecthem"> Theme </label>
+    <select  id="selectheme" > 
+
+        <option value="1"> theme a </option>
+        <option value="2"> theme b </option>
+        <option value="3"> theme c </option>
+        <option value="4"> theme d </option>
+        <option value="5"> theme e </option>
+        <option value="6"> theme f </option>
+        <option value="7"> theme g </option>
+        <option value="8"> theme h </option>
+        <option value="9"> theme i </option>
+        <option value="10"> theme j </option>
+        <option value="11"> theme k </option>
+        <option value="12"> theme l </option>
+    </select>
+
+    </div>
+    
+
+    <input id="validerChangementa" type="button" value="Valider les changements"></input>
+      
+    
+</div>
+
+<div id="apercuannonce">
+    
+   <img id="imgannoncb" src="public/image/decor/1.jpg">
+
+</img>
+<label class="annonceslabb"> </label> 
+<img class="imgannab" src ="public/image/logo/1.png" style="display: none;"> 
+<img class="imgannab" src ="public/image/logo/2.png" style="display: none;">  
+
+       
+    
+
+
+</div>

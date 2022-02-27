@@ -1,0 +1,70 @@
+
+
+<label id="labeltitre">Affichage de la page d acceuil</label>
+
+
+<div id="pub">
+    <div id="divselectcateg">
+        <label for="selectcateg" id="labelseleccatem"> Categorie </label>
+    <select  id="selectcateg" > 
+      <option value="1"> plus recent </option>
+        <option value="2"> plus ancient </option>
+        <option value="3"> melanger </option>
+        <option value="4"> personnalisé </option>
+    </select>
+
+    </div>
+   
+</div>
+<div id="info">
+    <div id="newb" >
+          
+        <img id="imgnewb"  src ="public/image/acceuil/remerciment/new.gif"/> 
+        <input class="boutonnewbup" value="changer l'image" type="button" style="display: none;"></input>
+       
+
+        <img id="imgnewdes"  src ="public/image/acceuil/remerciment/sapin.gif" /> 
+        <input class="boutonnewbup" value="changer l'image" type="button" style="display: none;"></input>
+        <input class="boutonnewbup" value="valider changement" type="button" style="display: none;"></input>
+       
+        <div id="boutonnewb">
+            <input class="boutonnewb" value="afficher" type="button"></input>
+            <input class="boutonnewb" value="cacher" type="button"></input>
+            <input class="boutonnewb" value="modifier" type="button"></input>
+                    </div>
+
+                    <form  id = "myFormnew" action ="/uploadnew" method="POST" enctype="multipart/form-data"> 
+         
+                        <input id="fileupdatenew" type="file" name="filesnew"  style="display: none;">  
+                        </input> 
+                        
+                        <input type="submit"  id="submitnew"  value="submit"  style="display:none;">
+                      </input> 
+                    
+                    </form>
+        </div>
+
+
+        <div id="new">
+            <img id="imgnew"  src ="public/image/acceuil/remerciment/ablay.jpg"/> 
+            <input class="boutonnewup" value="changer l'image" type="button" style="display: none;"></input>
+      
+            <p id="descnew">
+            
+                nous remercions Monsieur Le Provisoire de sa contubition et de son soutient à l endroit de notre organisation
+            </p>
+            <textarea id="descnewt"   style="display: none;"></textarea>
+      
+            <div id="boutonnew">
+                <input class="boutonnew" value="afficher" type="button"></input>
+                <input class="boutonnew" value="cacher" type="button"></input>
+                <input class="boutonnew" value="modifier" type="button"></input>
+                        </div>
+         <input class="boutonnewup" value="valider changement" type="button" style="display: none;"></input>
+       
+            </div>
+            </div>
+        
+        
+
+   

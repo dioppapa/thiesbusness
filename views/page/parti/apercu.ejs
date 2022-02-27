@@ -1,0 +1,53 @@
+
+    <div class="columnc"> <div class="cardc"> <img class="iconec" src ="public/image/boutique/dc0/cosmetiquek.jpg"></img> </div></div> 
+  
+      <div id="divprixaff"><label id="prixaffichlab"> prix  </label>  <label id="prixaffich">10000 </label></div>
+  
+      <div id="divcontrolaff">
+        <img class="buttonaffich"  src ="public/image/acceuil/plus.png"/> 
+        <img class="buttonaffich"  src ="public/image/acceuil/sup.png"/> 
+     
+      </div>
+   
+      <div id="divinputprixaff" style="display: none;">
+        <form  id = "myFormbou" action ="/uploadbou" method="POST" enctype="multipart/form-data"> 
+         
+          <input id="fileupdatebou" type="file" name="filesbou"  style="display: none;">  
+          </input> 
+          
+          <input type="submit"  id="submitbou"  value="submit"  style="display:none;">
+        </input> 
+      
+      </form>
+        <input id="inputajouterphoto" type="button" value="modifier"></input>
+     
+        <input id="inputaffprix" type="number" placeholder="prix"></input>
+     
+        <div id="divselectcatvente">
+          <label for="selectcategvente" id="labelselecvente"> Categorie </label>
+          <select  id="selectcategvente" > 
+      
+            <option value="fruits et legumes"> fruits et legumes </option>
+            <option value="electromenager"> electromenager </option>
+            <option value="elevage"> elevage </option>
+            <option value="bureatique"> bureatique </option>
+            <option value="cosmetique"> cosmetique </option>
+            <option value="vehecules"> vehecules </option>
+            <option value="immobilier"> immobilier </option>
+            <option value="alimentaire"> alimentaire </option>
+            <option value="pièces détachées"> pièces détachées </option>
+             
+          </select>
+        </div>
+       
+      </div>
+      
+      <div id="divalidersup" style="display: none;">
+        <label id="labelsup">Voulez vous supprimer ce produit</label>
+        <input id="inputvalidersup" type="button" value="valider"></input>
+    
+      </div>
+
+      <input id="valideraffich" type="button" value="valider" style="display: none;"></input>
+      <label id="valideraffichl" style="display: none;"> valider</label>
+    

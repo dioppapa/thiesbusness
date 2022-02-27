@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+   <style>
+   
+
+
+   </style>
+</head>
+<body>
+    <script src="/public/script/jquery-3.1.1.min.js"  type="text/javascript">    </script>
+    
+   
+    <div id="header">
+        <div id="htitre">
+            <div id="logoetlabel">
+                <img id="idlogo" src ="public/image/acceuil/logo.png"></img>
+                <label id="idlab"> Thies En Marche</label>
+            </div>
+            <img id="iduser" src ="public/image/admi/utilisateur.png"></img>
+           
+             <div id="iddivnot">
+
+
+                <img id="nota" src ="public/image/admi/message.png"></img>
+                <img id="notb" src ="public/image/admi/noter.png"></label>
+                <div id="notaa"></div>
+                <label id="notbb">1</label>
+
+            </div>
+
+            <div id="divserch">
+
+                <div id="divsercha">
+                    <img id="idimgserch" src ="public/image/acceuil/search.png"></img>
+                
+                   <input id="idinputsercha" type="search" placeholder="search..."></input>
+                  
+                </div>
+                <div id="serchtableapercu">
+                  </div>
+            </div>
+
+        </div>
+
+        <div id="houtil">
+            <div id="divbouton">
+                <img id="idparam" class="bt" src ="public/image/admi/param.png"></img>
+                <img id="idsup" class="bt" src ="public/image/admi/sup.png"></img>
+                <img id="idnp" class="bt" src ="public/image/admi/np.png"></img>
+                <img id="idarch" class="bt" src ="public/image/admi/archive.png"></img>
+                <img id="idact"  class="bt" src ="public/image/admi/act.png"></img>
+                <img id="idedit" class="bt" src ="public/image/admi/edit.png"></img>
+                <img id="idplus" class="bt" src ="public/image/admi/plus.png"></img>
+               
+            </div>
+
+            <div id="divgain">
+                
+            
+               
+            </div>
+        </div>
+    </div>
+                
+        <div id="menu">
+            <div class="classdivm">
+               <img class="classicone" src ="public/image/admi/user.png"></img>
+   
+               <div class="classlab"> Client</div>
+               <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+            </div>
+            <div class="classdivm">
+               <img class="classicone" src ="public/image/admi/np.png"></img>
+   
+               <div class="classlab"> Publication</div>
+               <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+         
+            </div>
+            <div class="classdivm">
+               <img class="classicone" src ="public/image/admi/annonce.jpg"></img>
+   
+               <div class="classlab"> Annonce</div>
+               <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+         
+            </div>
+
+            <div class="classdivm">
+                <img class="classicone" src ="public/image/admi/noter.png"></img>
+    
+                <div class="classlab"> projet</div>
+                <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+          
+             </div>
+
+             <div class="classdivm">
+                <img class="classicone" src ="public/image/admi/evenementb.jpg"></img>
+    
+                <div class="classlab"> programme</div>
+                <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+          
+             </div>
+
+             <div class="classdivm">
+                <img class="classicone" src ="public/image/admi/trainb.png"></img>
+    
+                <div class="classlab"> acceuil </div>
+                <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+          
+             </div>
+
+           
+            <div class="classdivm">
+               <img class="classicone" src ="public/image/admi/stat.png"></img>
+   
+               <div class="classlab"> Statistique</div>
+               <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+         
+            </div>
+            <div class="classdivm">
+               <img class="classicone" src ="public/image/admi/archive.png" ></img>
+   
+               <div class="classlab"> Archive</div>
+               <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+         
+            </div>
+   </div>
+
+   <div id="corps">
+
+
+    <div class="partimenu" style="display: block;">
+        <p> client</p>
+    </div>
+
+    <div class="partimenu" style="display: none;">
+       
+    
+    </div>
+
+    <div class="partimenu" style="display: none;">
+        <p> annonce</p>
+    </div>
+    <div class="partimenu" style="display: none;">
+        <p> projet</p>
+    </div>
+
+    <div class="partimenu" style="display: none;">
+        <p> programme</p>
+    </div>
+    <div class="partimenu" style="display: none;">
+        <%-include('page/parti/acceuil.ejs')%>
+    </div>
+ 
+    <div class="partimenu" style="display: none;">
+        <p id="statistique"> statistique</p>
+    </div>
+
+    <div class="partimenu" style="display: none;">
+        <p id="archive"> archive</p>
+    </div>
+    <div id="tabapercuaprogsup" style="display: none;">
+        <%-include('page/parti/apercusuppro.ejs')%>
+    </div>
+
+    <div id="tabapercuaprogram" style="display: none;">
+        <%-include('page/parti/apercuaprogram.ejs')%>
+    </div>
+    <div id="tabapercuapr" style="display: none;">
+        <%-include('page/parti/apercuapro.ejs')%>
+    </div>
+    <div id="tabapercupr" style="display: none;">
+        <%-include('page/parti/apercupro.ejs')%>
+    </div>
+    <div id="tabapercuann" style="display: none;">
+        <%-include('page/parti/apercua.ejs')%>
+     </div>
+    <div id="tabapercupub" style="display: none;">
+        <%-include('page/parti/apercup.ejs')%>
+     </div>
+    <div id="tabapercu">
+        <%-include('page/parti/apercucli.ejs')%>
+    </div>
+    
+    
+</div>
+
+</body>
+<script src="/public/script/script/admi/scriptclient.js"  type="text/javascript">    </script>
+<script src="/public/script/script/admi/scriptpub.js"  type="text/javascript">    </script>
+<script src="/public/script/script/admi/scriptannonce.js"  type="text/javascript">    </script>
+<script src="/public/script/script/admi/scriptprojet.js"  type="text/javascript">    </script>
+<script src="/public/script/script/admi/scriptprogramme.js"  type="text/javascript">    </script>
+<script src="/public/script/script/admi/scriptidee.js"  type="text/javascript">    </script>
+<script src="/public/script/script/admi/scriptacceuil.js"  type="text/javascript">    </script>
+
+<script src="/public/script/script/scriptadmi.js"  type="text/javascript">    </script>
+<script src="/public/script/css/cssadmi.js"  type="text/javascript">    </script>
+
+</html>
+
+
+<style>
+    
+</style>
+
+ 

@@ -1,0 +1,181 @@
+
+
+  
+  <div id="divproileacceuil">
+   
+
+    <div id="divhautprofile">
+      <div id="divtabprofile">
+        <table id="tabprofile">
+          <tr>
+            <td class="labelprofile"> Nom</td>
+            <td> <input id="inputprofilea" type="text" value=""> </input> </td>
+          </tr>
+          <tr>
+            <td class="labelprofile"> Prenom</td>
+            <td> <input id="inputprofileb" type="text" value=""> </input> </td>
+          </tr>
+         
+          <tr>
+            <form  id = "myFormpro" action ="/uploadpro" method="POST" enctype="multipart/form-data"> 
+         
+            <td class="labelprofile"> Photo</td>
+            <td> <input id="inputprofilec" type="button" value="modifier" > </input> </td>
+           
+              <input id="fileupdatepro" type="file" name="filespro"  style="display: none;" >  
+              </input> 
+              
+              <input type="submit"  id="submitpro"  value="valider"  style="display:none;">
+           
+            </input> 
+          
+          </form>
+          </tr>
+          
+                </table>
+                <input id="validerchangep" value="valider changement" type="button" style="display: none;" ></input>
+                <label id="validerchangepo">valider changement</label>
+             
+      </div>
+
+      <div id="divprofileb">
+        <img id="profb"  src ="public/image/acceuil/profile/utilisateur.png"/> </br>
+        <label id="nompb">Idy Dia</label>   </br>
+       <input id="modifierprofb" type="button" value="modifier" ></input>
+      
+    
+      </div>
+   </div>
+
+  
+    <div id="divbasprofile">
+
+      <div id="divcount">
+
+        <table id="tabcount">
+          <tr class="trcount">
+            <td class="tdcountname"> Publication</td>
+  
+            <td class="tdcount"> 5 </td>
+  
+            <td class="tdarticle">  </td>
+         
+          </tr>
+          <tr class="trcount">
+            <td class="tdcountname">Annonce</td>
+  
+            <td class="tdcount"> 2 </td>
+            <td class="tdarticle">  </td>
+          </tr>
+          <tr class="trcount">
+            <td class="tdcountname"> Boutique</td>
+  
+            <td class="tdcount"> 5 </td>
+            <td class="tdarticle"> articles </td>
+          </tr>
+        </table>
+  
+        
+      </div>
+  
+    
+    <div id="divboutonprofil">
+      <div id="menuprofileb0">
+        <img class="iconmenuprofileb"  src ="public/image/logo/idee.jpg"/> 
+        <label class="menuitemprofileb"> suggerer une idée </label>
+       </div>
+      <div id="menuprofileb1">
+        <img class="iconmenuprofileb"  src ="public/image/logo/reseau.jpg"/> 
+        <label class="menuitemprofileb">  reseau sociale </label>
+     </div>
+     
+     <div id="divreseauso" style="display: none;">
+         <div class="divreseauso">
+          <img class="iconreseau"  src="public/image/acceuil/facebook.png"/> 
+          <img class="iconreseau"  src="public/image/acceuil/twitter.png"/> 
+          <img class="iconreseau"  src="public/image/acceuil/insta.png"/> 
+          <img class="iconreseau"  src="public/image/acceuil/youtube.png"/> 
+   
+         </div>
+         <div class="divreseauso">
+          <img class="iconreseaub"  src="public/image/acceuil/facebook.png"/> 
+          <input id="inputresaeu" type="text" value="www.facebook.com/bvhddbhdglvj" style="display: none;"></input>
+          <input id="inputvaliderresaeu" type="button" value="valider" style="display: none;"></input>
+        
+        </div>
+    </div>
+
+
+    <div id="menuprofileb2">
+      <img class="iconmenuprofileb"  src ="public/image/logo/pass.jpg"/> 
+      <label class="menuitemprofileb"> mot de passe</label>
+     </div>
+     <div id="divshowmot" style="display: none;">
+      <label class="changercontenu"> changer le mot de passe</label>
+   
+
+      <div id="tabmotpasse">
+             
+        <div class="trdiv">
+          
+          <label class="tdtitrep"> ancien</label>
+
+          <input class="inputpasse" type="text" style="display: none;">  </input> 
+         </div>
+ 
+         <div class="trdiv">
+          <label class="tdtitrep"> nouveau </label>
+
+           <input class="inputpasse" type="text" style="display: none;">  </input> 
+   
+        </div>
+        <input type="button" value="valider" id="validerpassepb"></input>
+   
+      </div>
+    </div>
+
+     <div id="menuprofileb3">
+      <img class="iconmenuprofileb"  src ="public/image/logo/mail.png"/> 
+      <label class="menuitemprofileb"> mon email</label>
+     </div>
+    
+    <div id="divemail" style="display: none;">
+      <label class="changercontenue"> changer mon email</label>
+   
+      <div class="trdivemail">
+       <input id="inputemail"  type="text" style="display: none;">  </input> 
+       </div>
+
+      
+      <input type="button" value="valider" id="valideremailp"></input>
+ 
+    </div>
+
+     <div id="menuprofileb4">
+      <img class="iconmenuprofileb"  src ="public/image/logo/tel.jpg"/> 
+      <label class="menuitemprofileb">mon tel</label>
+     </div>
+     <div id="divtel" style="display: none;">
+      <label class="changercontenut"> changer mon numero</label>
+   
+      <div class="trdivtel">
+       <input id="inputtel"  type="text" style="display: none;">  </input> 
+       </div>
+
+      
+      <input type="button" value="valider" id="validertel"></input>
+ 
+    </div>
+
+     <div id="menuprofileb5">
+      <img class="iconmenuprofileb"  src ="public/image/logo/param.png"/> 
+      <label class="menuitemprofileb"> deconnection</label>
+     </div>
+
+    
+
+    </div>
+  </div>
+  
+      </div>
+    
