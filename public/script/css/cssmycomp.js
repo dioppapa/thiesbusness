@@ -1164,7 +1164,7 @@ function cssprofileb(){
        //   '-webkit-transition': '.8s ease-in-out',
        //   'transition': '.8s ease-in-out ', 
        'position':'absolute',
-     //  'border': '1px solid blue',
+     
        'box-shadow': '1px 1px 3px #555',
        'border-radius': '3%',
         
@@ -1882,7 +1882,9 @@ function cssMonEmeilResponse(){
 function cssMonEmeil(){
   
   $("#divemail").css({
-    'position':  'relative', 
+    'border':  '1px solid white',
+
+     'position':  'relative', 
     'margin':  'auto',
     'text-align':  'center',
     'width':  '85%',
@@ -1893,8 +1895,8 @@ function cssMonEmeil(){
              });
              $("#inputemail").css({
               'margin':  'auto',
-              'margin-top':  '12%',
-            
+               'margin-top':  '8%',
+               'border':  '1px solid black',
 
              // 'padding':  '0%',
            //  'height':  '15%',
@@ -1911,11 +1913,11 @@ function cssMonEmeil(){
                      $("#valideremailp").css({
                        'opacity':  '0',
                       'position':  'absolute', 
-                      'border-radius':  '20px',
+                     
                        'font-size':  '10px',   
                        'font-style':  'italic',
                        'font-weight':  'bold',
-                     'border-radius':  '20%',
+                       'border-radius':  '20px',
                      'left': '50%',
                      'top': '70%',
                      '-ms-transform': 'translateX(-50%)',

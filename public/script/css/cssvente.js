@@ -11,10 +11,11 @@
      
   cssMenubResponse()
   cssClumnVenteResponse()
+ 
  } else {
   cssMenub()
   cssClumnVente()
-  
+ 
 }
  
 
@@ -833,7 +834,7 @@ function cssCurrentClumn(i){
       //     $("#divventeb").height((Y*72)/100)
         
   }
-  function cssReseaudetail(){
+  function cssReseaudetailResponse(){
     $(".divannonceurb").css({
     
     
@@ -848,7 +849,7 @@ function cssCurrentClumn(i){
         }) ;
         $(".imgrfd").css({
     
-          'margin-left': '10%',
+          'margin-left': '15%',
           }) ;
 
 
@@ -856,29 +857,34 @@ function cssCurrentClumn(i){
     
         //  'padding-left': '23%' ,
           'cursor': 'pointer' ,
-          'font-size': '14px',
+          'font-size': '12px',
           }) ;
 
           $(".imgannonced").css({
-    
+            
             'position': 'absolute',
             'top': '80%',
             'left': '50%',
             '-ms-transform': 'translate(-50%,-50%)',
             'transform': 'translate(-50%,-50%)',
               'border-radius': '50%' ,
-              
+              'box-shadow': '1px 1px 3px #555',
+              'width': '80%' ,
+              'height': '30%' ,
               }) ;
 
-              $('.imgannonced').width((X*20)/100)
-               $('.imgannonced').height((Y*20)/100)
+           //   $('.imgannonced').width((X*15)/100)
+          //     $('.imgannonced').height((Y*15)/100)
           
 
           $(".reseauad").css({
     
             //  'padding-left': '23%' ,
-            'margin': '12%',
-          //  'border': '1px solid black',
+            'margin': 'auto',
+            'margin-top': '10%',
+          //  'margin-left': '10%',
+            //'border': '1px solid black',
+            'width': '80%' ,
             'box-shadow': '1px 1px 3px #555',
            // 'background':'rgba(0,191,255,0.3)',
               }) ;
@@ -886,11 +892,11 @@ function cssCurrentClumn(i){
               $(".annoncnomd").css({
     
                 'position': 'absolute',
-                'top': '55%',
+                'top': '48%',
                 'left': '50%',
                 '-ms-transform': 'translate(-50%,-50%)',
                 'transform': 'translate(-50%,-50%)',
-                'font-size': '18px',
+                'font-size': '14px',
                 'font-style': 'italic',
                 'font-weight': 'bold',
                   
@@ -904,7 +910,7 @@ function cssCurrentClumn(i){
                  //   'transform': 'translateX(-50%)',
                     'margin-left': '3%',
                     'margin-left': '5%',
-                    'font-size': '12px',
+                    'font-size': '10px',
                     'font-style': 'italic',
                     'font-weight': 'bold',
                       
@@ -926,7 +932,7 @@ function cssCurrentClumn(i){
                        //    'transform': 'translateX(-50%)',
                        'margin-left': '3%',
                       'margin-left': '5%',
-                        'font-size': '12px',
+                        'font-size': '10px',
                         'font-style': 'italic',
                         'font-weight': 'bold',
                           
@@ -942,15 +948,18 @@ $("#divteletemailcontactd").css({
               //  'left': '50%',
               //  '-ms-transform': 'translate(-50%,-50%)',
               //  'transform': 'translate(-50%,-50%)',
-             // 'width': '100%',
-             
-              'margin-top': '20%',
-                'font-size': '13px',
+              'width': '98%',
+            //  'margin-left': '15%',
+            'margin': 'auto',
+              'margin-top': '30%',
+                'font-size': '11px',
                // 'font-style': 'italic',
                 'color': 'rgb(0,0,0,0.5)',
                 'font-weight': 'bold',
-                'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
-               
+               // 'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
+                'box-shadow': '1px 1px 3px #555',
+             //   'border': '1px solid black',
+                'border-radius': '20px',
                               
                   }) ;
 
@@ -964,7 +973,7 @@ $("#divteletemailcontactd").css({
                     'left': '50%',
                     '-ms-transform': 'translate(-50%,-50%)',
                     'transform': 'translate(-50%,-50%)',
-                    'font-size': '15px',
+                    'font-size': '13px',
                     'font-style': 'italic',
                     'font-weight': 'bold',
                       
@@ -972,8 +981,233 @@ $("#divteletemailcontactd").css({
               
 }
 
+function cssReseaudetail(){
+  $(".divannonceurb").css({
+  
+  
+    }) ;
+
+  $(".imgrmd , .imgrid , .imgrtd , .imgrfd , .reseaubd").width((X*2)/100)
+    
+
+  $(".imgrmd , .imgrid , .imgrtd , .imgrfd ").css({
+  
+      'margin': '3%',
+      }) ;
+      $(".imgrfd").css({
+  
+        'margin-left': '15%',
+        }) ;
+
+
+  $(".annonceuremaild").css({
+  
+      //  'padding-left': '23%' ,
+        'cursor': 'pointer' ,
+        'font-size': '14px',
+        }) ;
+
+        $(".imgannonced").css({
+  
+          'position': 'absolute',
+          'top': '80%',
+          'left': '50%',
+          '-ms-transform': 'translate(-50%,-50%)',
+          'transform': 'translate(-50%,-50%)',
+            'border-radius': '50%' ,
+            'box-shadow': '1px 1px 3px #555',
+           
+            }) ;
+
+            $('.imgannonced').width((X*15)/100)
+             $('.imgannonced').height((Y*15)/100)
+        
+
+        $(".reseauad").css({
+  
+          //  'padding-left': '23%' ,
+          'margin': 'auto',
+          'margin-top': '4%',
+        //  'margin-left': '10%',
+          //'border': '1px solid black',
+          'width': '80%' ,
+          'box-shadow': '1px 1px 3px #555',
+         // 'background':'rgba(0,191,255,0.3)',
+            }) ;
+
+            $(".annoncnomd").css({
+  
+              'position': 'absolute',
+              'top': '48%',
+              'left': '50%',
+              '-ms-transform': 'translate(-50%,-50%)',
+              'transform': 'translate(-50%,-50%)',
+              'font-size': '18px',
+              'font-style': 'italic',
+              'font-weight': 'bold',
+                
+                }) ;
+                $(".annonceurtel").css({
+  
+               //  'position': 'absolute',
+               //   'top': '55%',
+               //   'left': '50%',
+               //  '-ms-transform': 'translateX(-50%)',
+               //   'transform': 'translateX(-50%)',
+                  'margin-left': '3%',
+                  'margin-left': '5%',
+                  'font-size': '12px',
+                  'font-style': 'italic',
+                  'font-weight': 'bold',
+                    
+                    }) ;
+                    $(".spananonce").css({
+  
+                   
+                      'color': 'black',
+                        
+                        }) ;
+                    
+
+                    $(".annonceuremail").css({
+  
+                    //  'position': 'absolute',
+                    //     'top': '55%',
+                    //    'left': '40%',
+                    //    '-ms-transform': 'translateX(-50%)',
+                     //    'transform': 'translateX(-50%)',
+                     'margin-left': '3%',
+                    'margin-left': '5%',
+                      'font-size': '12px',
+                      'font-style': 'italic',
+                      'font-weight': 'bold',
+                        
+                        }) ;
+
+                
+                
+
+$("#divteletemailcontactd").css({
+  
+             'position': 'relative',
+            //  'top': '20%',
+            //  'left': '50%',
+            //  '-ms-transform': 'translate(-50%,-50%)',
+            //  'transform': 'translate(-50%,-50%)',
+            'width': '80%',
+          //  'margin-left': '15%',
+          'margin': 'auto',
+            'margin-top': '10%',
+              'font-size': '13px',
+             // 'font-style': 'italic',
+              'color': 'rgb(0,0,0,0.5)',
+              'font-weight': 'bold',
+             // 'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
+              'box-shadow': '1px 1px 3px #555',
+           //   'border': '1px solid black',
+              'border-radius': '20px',
+            
+                }) ;
+
+            //    $('#divteletemailcontactd').height((Y*10)/100)
+        
+
+                $(".contactermoi").css({
+  
+                  'position': 'absolute',
+                  'top': '5%',
+                  'left': '50%',
+                  '-ms-transform': 'translate(-50%,-50%)',
+                  'transform': 'translate(-50%,-50%)',
+                  'font-size': '15px',
+                  'font-style': 'italic',
+                  'font-weight': 'bold',
+                    
+                    }) ;
+            
+}
+
  
   
+  function cssDetailContactResponse(){
+    $("#detailglobalcontact").css({
+     // 'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
+      
+           });
+       //    $('#detailglobalcontact').width((X*80)/100)
+            $('#detailglobalcontact').height((Y*75)/100)
+       
+            $("#imgcntactdet").css({
+             
+              'margin': '2%',
+              'margin-top': '30%',
+              'border': '1px solid red',
+              'box-shadow': '1px 1px 3px #555',
+              'float': 'left',
+              'position': 'relative',
+              'width': '50%',
+                      'height': '60%',
+                      'border-radius': '20px',
+                   });
+             //      $('#imgcntactdet').width((X*30)/100)
+            ///        $('#imgcntactdet').height((Y*65)/100)
+
+                    $("#clientctcdetail").css({
+                   //   'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
+                      'float': 'right',
+                      'margin-top': '10%',
+'border': '1px solid red',
+
+'box-shadow': '1px 1px 3px #555',
+                      'position': 'relative',
+                      'border-radius': '20px',
+                      'width': '40%',
+                      'height': '50%',
+                           });
+                       //    $('#clientctcdetail').width((X*27)/100)
+                       //     $('#clientctcdetail').height((Y*65)/100)
+
+                            $("#pcontactdet").css({
+                              'border-radius': '20px',
+                             
+                              'box-shadow': '1px 1px 3px #555',
+                            //  'margin': 'auto',
+                              'position': 'absolute',
+                   'top': '35%',
+                   'left': '50%',
+                   '-ms-transform': 'translate(-50%,-50%)',
+                   'transform': 'translate(-50%,-50%)',
+                   'width': '80%',
+                      'height': '50%',
+                                   });
+                               //    $('#pcontactdet').width((X*25)/100)
+                               //     $('#pcontactdet').height((Y*35)/100)
+        
+
+                                    $("#detailpri").css({
+                                      'font-size': '18px',
+                                      'font-style': 'italic',
+                                      'font-weight': 'bold',
+                                      'box-shadow': '1px 1px 3px #555',
+                                     
+                                      'border-radius': '20px',
+                                      'position': 'absolute',
+                   'top': '80%',
+                   'left': '50%',
+                   '-ms-transform': 'translate(-50%,-50%)',
+                   'transform': 'translate(-50%,-50%)',
+                //   'border': '1px solid red',
+                   'width': '80%',
+                   'padding-left': '15%',
+                                           });
+                                        //   $('#detailpri').width((X*35)/100)
+                                         //   $('#detailpri').height((Y*65)/100)
+                
+                            
+
+               
+            
+  }
   function cssDetailContact(){
     $("#detailglobalcontact").css({
      // 'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
@@ -983,22 +1217,33 @@ $("#divteletemailcontactd").css({
             $('#detailglobalcontact').height((Y*75)/100)
        
             $("#imgcntactdet").css({
-              'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
+              'margin-top': '5%',
+              'margin': '6%',
+              'border': '1px solid red',
+              'box-shadow': '1px 1px 3px #555',
               'float': 'left',
               'position': 'relative',
+              'width': '30%',
+                      'height': '60%',
+                      'border-radius': '20px',
                    });
-                   $('#imgcntactdet').width((X*30)/100)
-                    $('#imgcntactdet').height((Y*65)/100)
+             //      $('#imgcntactdet').width((X*30)/100)
+            ///        $('#imgcntactdet').height((Y*65)/100)
 
                     $("#clientctcdetail").css({
-                      'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
+                   //   'box-shadow': '0 0 35px rgba(0, 0, 0, 0.12)',
                       'float': 'right',
-'border': '1px solid blue',
+                      'margin-top': '10%',
+'border': '1px solid red',
 
+'box-shadow': '1px 1px 3px #555',
                       'position': 'relative',
+                      'border-radius': '20px',
+                      'width': '30%',
+                      'height': '50%',
                            });
-                           $('#clientctcdetail').width((X*27)/100)
-                            $('#clientctcdetail').height((Y*65)/100)
+                       //    $('#clientctcdetail').width((X*27)/100)
+                       //     $('#clientctcdetail').height((Y*65)/100)
 
                             $("#pcontactdet").css({
                              
@@ -1009,9 +1254,11 @@ $("#divteletemailcontactd").css({
                    'left': '50%',
                    '-ms-transform': 'translate(-50%,-50%)',
                    'transform': 'translate(-50%,-50%)',
+                   'width': '70%',
+                      'height': '50%',
                                    });
-                                   $('#pcontactdet').width((X*25)/100)
-                                    $('#pcontactdet').height((Y*35)/100)
+                               //    $('#pcontactdet').width((X*25)/100)
+                               //     $('#pcontactdet').height((Y*35)/100)
         
 
                                     $("#detailpri").css({
