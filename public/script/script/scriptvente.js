@@ -32,7 +32,7 @@ function createTabVenteDetail( data){
   
   $('.rowb').append( createHtmlClomn(data[a]))
   
- // cssClumn()
+ 
  if (window.matchMedia("(max-width: 700px)").matches) { // If media query matches
      
   cssClumnVentebResponse()
@@ -55,8 +55,8 @@ function createHtmlClomn(data){
 
   
   var divlab = '<div class="divlab"><label class="divlaba">contacter</label><label class="divlabb">' + data.prix + ' F</label> <label class="divlabbb" style="display: none;">' + data.idc + ' </label>   </div>'
-  var clonne = '<div class="columnb"> <div class="cardb"> <img class="icon-wrapperb" src ="public/image/vente/' + dir + '/' +data.image + '"></img>'+ divlab+ '</div></div>'  
-   
+ var clonne = '<div class="columnb"> <div class="cardb"> <img class="icon-wrapperb" src ="public/image/vente/' + dir + '/' +data.image + '"></img>'+ divlab+ '</div></div>'  
+    
 
   return clonne
 
@@ -111,8 +111,14 @@ function createHtmlClomn(data){
       $('#detailglobalcontact').remove()
      var divdetail =  createHtmlContacDetail(img , prix , client)
       $('#divventeb').append(divdetail)
-      cssDetailContact()
-      
+       if (window.matchMedia("(max-width: 700px)").matches) { // If media query matches
+     
+        
+        cssDetailContactResponse()
+       } else {
+       
+        cssDetailContact()
+      } 
     }
     function createHtmlContacDetail(img , prix , client){
      // var divdetailimage = '<div id="imgcntactdet"> <img class="icon-wrapperb" src ="public/image/vente/' + dir + '/' +data.image + '"></img> <label id="detailpri"> 10000f</label>   </div>'
@@ -126,8 +132,8 @@ function createHtmlClomn(data){
    // var divanonca = ' <div class="divannonceura"> <label class="contactermoi">contacter moi</label> <div id="divteletemailcontactd">   <label class="annonceurtel">  Tel  : <span class="spananonce"> '+ client.tel +' </span> </label> </br>   <label class="annonceuremail"> Email : <span class="spananonce"> papapvjjcjeckipap@gvfgdjh.fr </span>  </label> </div>    </div>'
    
     var reseau = '<div class="reseauad" ><img class="imgrfd"  src="public/image/acceuil/facebook.png"></img><img class="imgrtd"   src="public/image/acceuil/twitter.png"></img><img class="imgrid"   src="public/image/acceuil/insta.png"></img> <img class="imgrmd"   src="public/image/acceuil/messenger.png"></img></div>'
-   
-    var divanoncb = '<div class="annoncpd"> <img class="imgannonced"   src="public/image/acceuil/profile/' + client.img + '" ></img> </br>   <label class="annoncnomd"> '+ client.nom +' '+ client.prenom +' </label> </div>'
+  
+    var divanoncb = '<div class="annoncpd"> <img class="imgannonced"   src="public/image/profile/' + client.img + '" ></img> </br>   <label class="annoncnomd"> '+ client.prenom +' '+  client.nom  +' </label> </div>'
    
  
  //   var divc = '<div class="divannonceurcli"> <label class="labcontactmoi"> contacter moi </label> </div>'
@@ -169,7 +175,17 @@ function createHtmlClomn(data){
         
                createContactDetail(imgsrc , prix ,cli)
          
-               cssReseaudetail()
+              
+
+               if (window.matchMedia("(max-width: 700px)").matches) { // If media query matches
+     
+                cssReseaudetailResponse()
+
+               } else {
+               
+                cssReseaudetail()
+
+              }
              //  cssannoncp()
            //    cssannonceur()
       }) ;
@@ -209,7 +225,7 @@ function createHtmlClomn(data){
       
       if(a==0){
         createTabVenteDetail(fruietlegume)
-       
+      
       }
       else if(a==1){
         createTabVenteDetail( electromenager)
