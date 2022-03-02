@@ -23,12 +23,12 @@ function cssClumnResponse(){
  
     //     $("#divventeb").height((Y*72)/100)
        $(".divlab").css({
-       //   'position': 'absolute',
+      //  'position': 'absolute',
           'margin-top': '2%',
-         // 'width': '100%',
-       
+          'width': '95%',
+         'border': '1px solid indigo',
                });
-             $('.divlab').width((X*25)/100)
+         //    $('.divlab').width((X*25)/100)
            // $('.divlab').height((Y*0)/100)
        
 
@@ -678,14 +678,14 @@ function cssClumnVentebResponse(){
     
   $(".icon-wrapperb").css({
    'position': 'relative',
-    'margin': 'auto',
-  
+  'margin': 'auto',
+  //  'border': '1px solid blue',
     'height': '4em',
-    'width': '4em',
+    'width': '75%',
     
    
-    'display': 'grid',
-    'place-items': 'center',
+  //  'display': 'grid',
+//  'place-items': 'center',
     'transition': '0.5s',
          });
  
@@ -694,16 +694,20 @@ function cssClumnVentebResponse(){
                   'display': 'grid',
                    'place-items': 'center',
               //     'border': '1px solid blue',
-                   'padding': '0',
+                //   'padding': 'auto',
                    //'margin': '2',
+               //    'margin': 'auto',
+  
                    'box-sizing': 'border-box',
-                   'font-family': '"Poppins", sans-serif'
-                   
+                   'font-family': '"Poppins", sans-serif',
+                   'height': '5em',
                         });
 
                         $(".rowb").css({
+                        //  'border': '1px solid blue',
+   
                           'position': 'absolute',
-                          'top': '50%',
+                          'top': '53%',
                           'left': '50%',
                             '-ms-transform': 'translate(-50%, -50%)',
                             'transform': 'translate(-50%, -50%)',
@@ -711,23 +715,29 @@ function cssClumnVentebResponse(){
                           'display': 'flex',
                           'flex-wrap': 'wrap',
                           //'float': 'right',
-                          'margin': 'auto',
-                          'width':'100%',
+                          'padding':'0em 0em 0em 12%',
+                    
+                          'width':'95%',
+                          'height':'60%',
+                          'overflow':'auto',
                         
                                 });
+                               
+
 
                 $(".columnb").css({
                   'width': '90%',
-                  'height': '100%',
-                 
-                  'padding':'1em 0em 0em 1em',
+                  'height': '5.5em',
+              //    'padding':'1em 1em 0em 1em',
+                 'margin-left':'2%',
+                 'margin-bottom':'3%',
                   'text-align': 'center',
                         });
 
                         $(".cardb").css({
                           'width': '100%',
-                          'height':'100%',
-                          'padding': '1em 0',
+                          //'height':'100%',
+                   //       'padding': '1em 0',
                           'background': 'linear-gradient(#ffffff 50%, rgba(233,0,0,0.1) 50%)',
                           'background-size': '100% 200%',
                           'background-position': '0 2.5%',
@@ -736,7 +746,7 @@ function cssClumnVentebResponse(){
                           'cursor': 'pointer',
                           'transition': '0.5s',
                           'box-shadow': '1px 1px 3px #555' ,
-                          'border': '1px solid red',
+                      //    'border': '1px solid red',
                                 });
                 
 
@@ -753,7 +763,8 @@ $("#divventeb").css({
 
 $(".columnb").css({
   //'border': '1px solid blue',
-  'flex': '0% 10% 30%',
+ // 'border': '1px solid yellow',
+ // 'flex': '10% 10% 10%',
   'max-width': '25%',
        });
   //     $("#divventeb").height((Y*72)/100)
@@ -766,6 +777,7 @@ $(".columnb").css({
     'font-weight': 'bold',
     'line-height': '1.6',
     'letter-spacing': '0.03em',
+  //  'border': '1px solid indigo',
         });
 
       
@@ -1284,6 +1296,7 @@ $("#divteletemailcontactd").css({
   
   
   function cssMenubResponse(){
+    
     $("#mainb").css({
                                                                                  
                   
@@ -1400,10 +1413,11 @@ $("#divteletemailcontactd").css({
 
         var i = $(this).index()
       
-      
         if(i==0){
+      
           createTabVenteDetail(fruietlegume)
-  
+         
+     
         }
         else if(i==1){
           createTabVenteDetail( electromenager)
