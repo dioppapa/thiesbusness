@@ -39,6 +39,7 @@ function cssPageBoutique(){
   $(".pagem").css({
         'border': '1px solid red',
        'margin-top': '18%',
+       'overflow': 'auto',
        
        
            }) ;
@@ -588,7 +589,7 @@ function cssMyCompteResponse(){
       'margin-left': '25%' ,
       'border': '1px solid red',
      
-   //   'overflow': 'auto',
+      'overflow': '',
       
           }) ;
   
